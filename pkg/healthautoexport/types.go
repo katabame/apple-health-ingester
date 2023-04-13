@@ -457,8 +457,9 @@ func (t *Time) UnmarshalJSON(data []byte) error {
 		return t.Time.UnmarshalJSON(data)
 	}
 	var err error
-	if t.Time, err = time.Parse(`"`+TimeFormat24h+`"`, string(data)); err != nil {
-		time.Parse(`"`+TimeFormat12h+`"`, string(data))
+	t.Time, err = time.Parse(`"`+TimeFormat24h+`"`, string(data))
+	if err != nil {
+		t.Time, err = time.Parse(`"`+TimeFormat12h+`"`, string(data))
 	}
 	return err
 }
