@@ -1,9 +1,9 @@
 package noop
 
 import (
-	"github.com/irvinlim/apple-health-ingester/pkg/backends"
-	apierrors "github.com/irvinlim/apple-health-ingester/pkg/errors"
-	"github.com/irvinlim/apple-health-ingester/pkg/healthautoexport"
+	"github.com/katabame/apple-health-ingester/pkg/backends"
+	apierrors "github.com/katabame/apple-health-ingester/pkg/errors"
+	"github.com/katabame/apple-health-ingester/pkg/healthautoexport"
 )
 
 type Backend struct {

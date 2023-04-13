@@ -2,7 +2,7 @@
 
 set -euxo pipefail
 
-IMAGE_NAME="irvinlim/apple-health-ingester"
+IMAGE_NAME="katabame/apple-health-ingester"
 
 docker build -t "${IMAGE_NAME}:latest" .
 

@@ -11,9 +11,9 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/irvinlim/apple-health-ingester/pkg/backends"
-	apierrors "github.com/irvinlim/apple-health-ingester/pkg/errors"
-	"github.com/irvinlim/apple-health-ingester/pkg/healthautoexport"
+	"github.com/katabame/apple-health-ingester/pkg/backends"
+	apierrors "github.com/katabame/apple-health-ingester/pkg/errors"
+	"github.com/katabame/apple-health-ingester/pkg/healthautoexport"
 )
 
 // Ingester is a generic ingester for Health Auto Export data.

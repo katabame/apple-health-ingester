@@ -8,8 +8,8 @@ import (
 	"github.com/google/go-cmp/cmp/cmpopts"
 	jsoniter "github.com/json-iterator/go"
 
-	"github.com/irvinlim/apple-health-ingester/pkg/healthautoexport"
-	"github.com/irvinlim/apple-health-ingester/pkg/healthautoexport/fixtures"
+	"github.com/katabame/apple-health-ingester/pkg/healthautoexport"
+	"github.com/katabame/apple-health-ingester/pkg/healthautoexport/fixtures"
 )
 
 var (
@@ -264,7 +264,7 @@ func TestUnmarshalFromString(t *testing.T) {
 		},
 		{
 			// Support new aggregated sleep_analysis format from HAE v6.6.2 onwards.
-			// https://github.com/irvinlim/apple-health-ingester/issues/20
+			// https://github.com/katabame/apple-health-ingester/issues/20
 			name: "unmarshal aggregated sleep analysis",
 			want: fixtures.PayloadMetricsSleepPhases,
 			input: `{
@@ -311,7 +311,7 @@ func TestUnmarshalFromString(t *testing.T) {
 }
 
 func mktime(ts string) *healthautoexport.Time {
-	t, err := time.Parse(healthautoexport.TimeFormat, ts)
+	t, err := time.Parse(healthautoexport.TimeFormat24h, ts)
 	if err != nil {
 		panic(err)
 	}

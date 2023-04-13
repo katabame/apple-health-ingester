@@ -15,7 +15,8 @@ import (
 
 const (
 	// TimeFormat is the format to parse time.Time in this package.
-	TimeFormat        = "2006-01-02 15:04:05 -0700"
+	TimeFormat12h     = "2006-01-02 3:04:05 PM -0700"
+	TimeFormat24h     = "2006-01-02 15:04:05 -0700"
 	SleepAnalysisName = "sleep_analysis"
 )
 
@@ -441,9 +442,9 @@ func (t Time) MarshalJSON() ([]byte, error) {
 	}
 
 	// Otherwise, marshal using TimeFormat.
-	b := make([]byte, 0, len(TimeFormat)+2)
+	b := make([]byte, 0, len(TimeFormat24h)+2)
 	b = append(b, '"')
-	b = t.AppendFormat(b, TimeFormat)
+	b = t.AppendFormat(b, TimeFormat24h)
 	b = append(b, '"')
 	return b, nil
 }
@@ -456,6 +457,8 @@ func (t *Time) UnmarshalJSON(data []byte) error {
 		return t.Time.UnmarshalJSON(data)
 	}
 	var err error
-	t.Time, err = time.Parse(`"`+TimeFormat+`"`, string(data))
+	if t.Time, err = time.Parse(`"`+TimeFormat24h+`"`, string(data)); err != nil {
+		time.Parse(`"`+TimeFormat12h+`"`, string(data))
+	}
 	return err
 }

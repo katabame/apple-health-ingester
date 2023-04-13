@@ -11,8 +11,8 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/pflag"
 
-	"github.com/irvinlim/apple-health-ingester/pkg/backends"
-	"github.com/irvinlim/apple-health-ingester/pkg/healthautoexport"
+	"github.com/katabame/apple-health-ingester/pkg/backends"
+	"github.com/katabame/apple-health-ingester/pkg/healthautoexport"
 )
 
 var (
@@ -24,7 +24,7 @@ var (
 // to produce a sorted JSON output file. As such, it should only be used for
 // debugging purposes.
 //
-// TODO(irvinlim): Handle workout data
+// TODO(katabame): Handle workout data
 type Backend struct {
 	metrics map[string]*MetricFile
 	mtx     sync.RWMutex

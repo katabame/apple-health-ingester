@@ -1,9 +1,9 @@
 # Apple Health Ingester
 
-![license](https://img.shields.io/github/license/irvinlim/apple-health-ingester)
-[![coverage](https://img.shields.io/codecov/c/gh/irvinlim/apple-health-ingester)](https://app.codecov.io/gh/irvinlim/apple-health-ingester)
-[![docker pulls](https://img.shields.io/docker/pulls/irvinlim/apple-health-ingester.svg)](https://hub.docker.com/r/irvinlim/apple-health-ingester)
-[![image size](https://img.shields.io/docker/image-size/irvinlim/apple-health-ingester?sort=date)](https://hub.docker.com/r/irvinlim/apple-health-ingester/tags)
+![license](https://img.shields.io/github/license/katabame/apple-health-ingester)
+[![coverage](https://img.shields.io/codecov/c/gh/katabame/apple-health-ingester)](https://app.codecov.io/gh/katabame/apple-health-ingester)
+[![docker pulls](https://img.shields.io/docker/pulls/katabame/apple-health-ingester.svg)](https://hub.docker.com/r/katabame/apple-health-ingester)
+[![image size](https://img.shields.io/docker/image-size/katabame/apple-health-ingester?sort=date)](https://hub.docker.com/r/katabame/apple-health-ingester/tags)
 
 Simple HTTP server written in Go that ingests data from [Health Auto Export](https://www.healthexportapp.com/) into multiple configurable storage backends.
 
@@ -47,20 +47,20 @@ You can deploy and run the server using Docker or as a standalone binary, which 
 
 ### Linux Download
 
-The following command downloads the server for `linux-amd64`. For more platforms, refer to the [Releases](https://github.com/irvinlim/apple-health-ingester/releases) page.
+The following command downloads the server for `linux-amd64`. For more platforms, refer to the [Releases](https://github.com/katabame/apple-health-ingester/releases) page.
 
 ```sh
-$ curl -L https://github.com/irvinlim/apple-health-ingester/releases/latest/download/apple-health-ingester-linux-amd64 > apple-health-ingester
+$ curl -L https://github.com/katabame/apple-health-ingester/releases/latest/download/apple-health-ingester-linux-amd64 > apple-health-ingester
 $ chmod +x apple-health-ingester
 $ ./apple-health-ingester --help
 ```
 
 ### Docker Image
 
-The image is also hosted on [Docker Hub](https://hub.docker.com/r/irvinlim/apple-health-ingester).
+The image is also hosted on [Docker Hub](https://hub.docker.com/r/katabame/apple-health-ingester).
 
 ```sh
-$ docker run --rm irvinlim/apple-health-ingester --help
+$ docker run --rm katabame/apple-health-ingester --help
 ```
 
 ## Configuration

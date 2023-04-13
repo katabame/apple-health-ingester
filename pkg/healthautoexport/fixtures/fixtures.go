@@ -3,7 +3,7 @@ package fixtures
 import (
 	"time"
 
-	"github.com/irvinlim/apple-health-ingester/pkg/healthautoexport"
+	"github.com/katabame/apple-health-ingester/pkg/healthautoexport"
 )
 
 var (
@@ -160,7 +160,7 @@ var (
 )
 
 func mktime(ts string) *healthautoexport.Time {
-	t, err := time.Parse(healthautoexport.TimeFormat, ts)
+	t, err := time.Parse(healthautoexport.TimeFormat24h, ts)
 	if err != nil {
 		panic(err)
 	}

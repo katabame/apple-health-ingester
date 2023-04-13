@@ -1,7 +1,7 @@
 package ingester
 
 import (
-	"github.com/irvinlim/apple-health-ingester/pkg/healthautoexport"
+	"github.com/katabame/apple-health-ingester/pkg/healthautoexport"
 )
 
 // PayloadWithTarget augments a target name to the payload, which helps to identify a

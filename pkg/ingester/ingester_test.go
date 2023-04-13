@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/irvinlim/apple-health-ingester/pkg/backends/noop"
-	"github.com/irvinlim/apple-health-ingester/pkg/ingester"
+	"github.com/katabame/apple-health-ingester/pkg/backends/noop"
+	"github.com/katabame/apple-health-ingester/pkg/ingester"
 )
 
 const (

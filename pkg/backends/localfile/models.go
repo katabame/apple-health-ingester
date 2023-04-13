@@ -3,7 +3,7 @@ package localfile
 import (
 	"strings"
 
-	"github.com/irvinlim/apple-health-ingester/pkg/healthautoexport"
+	"github.com/katabame/apple-health-ingester/pkg/healthautoexport"
 )
 
 type MetricFile struct {

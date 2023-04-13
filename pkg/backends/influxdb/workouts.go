@@ -1,7 +1,7 @@
 package influxdb
 
 import (
-	"github.com/irvinlim/apple-health-ingester/pkg/healthautoexport"
+	"github.com/katabame/apple-health-ingester/pkg/healthautoexport"
 )
 
 // CreateWorkoutStatistics returns additional fields for a Workout.

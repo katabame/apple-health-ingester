@@ -10,10 +10,10 @@ import (
 	"github.com/influxdata/influxdb-client-go/v2/api/write"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/irvinlim/apple-health-ingester/pkg/backends"
-	"github.com/irvinlim/apple-health-ingester/pkg/backends/influxdb"
-	"github.com/irvinlim/apple-health-ingester/pkg/healthautoexport"
-	"github.com/irvinlim/apple-health-ingester/pkg/healthautoexport/fixtures"
+	"github.com/katabame/apple-health-ingester/pkg/backends"
+	"github.com/katabame/apple-health-ingester/pkg/backends/influxdb"
+	"github.com/katabame/apple-health-ingester/pkg/healthautoexport"
+	"github.com/katabame/apple-health-ingester/pkg/healthautoexport/fixtures"
 )
 
 func TestBackend(t *testing.T) {

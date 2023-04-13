@@ -11,7 +11,7 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/pflag"
 
-	"github.com/irvinlim/apple-health-ingester/pkg/ingester"
+	"github.com/katabame/apple-health-ingester/pkg/ingester"
 )
 
 func main() {

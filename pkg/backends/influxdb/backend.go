@@ -11,8 +11,8 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/irvinlim/apple-health-ingester/pkg/backends"
-	"github.com/irvinlim/apple-health-ingester/pkg/healthautoexport"
+	"github.com/katabame/apple-health-ingester/pkg/backends"
+	"github.com/katabame/apple-health-ingester/pkg/healthautoexport"
 )
 
 const (

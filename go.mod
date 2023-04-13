@@ -1,4 +1,4 @@
-module github.com/irvinlim/apple-health-ingester
+module github.com/katabame/apple-health-ingester
 
 go 1.17
 

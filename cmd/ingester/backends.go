@@ -5,9 +5,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/irvinlim/apple-health-ingester/pkg/backends/influxdb"
-	"github.com/irvinlim/apple-health-ingester/pkg/backends/localfile"
-	"github.com/irvinlim/apple-health-ingester/pkg/ingester"
+	"github.com/katabame/apple-health-ingester/pkg/backends/influxdb"
+	"github.com/katabame/apple-health-ingester/pkg/backends/localfile"
+	"github.com/katabame/apple-health-ingester/pkg/ingester"
 )
 
 const (

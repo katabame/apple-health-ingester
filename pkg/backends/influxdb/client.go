@@ -7,7 +7,7 @@ import (
 	influxdb2 "github.com/influxdata/influxdb-client-go/v2"
 	"github.com/influxdata/influxdb-client-go/v2/api/write"
 
-	apierrors "github.com/irvinlim/apple-health-ingester/pkg/errors"
+	apierrors "github.com/katabame/apple-health-ingester/pkg/errors"
 )
 
 // Client knows how to write to an InfluxDB database.
