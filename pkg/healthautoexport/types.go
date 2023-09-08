@@ -15,7 +15,7 @@ import (
 
 const (
 	// TimeFormat is the format to parse time.Time in this package.
-	TimeFormat12h     = "2006-01-02 3:04:05 PM -0700"
+	TimeFormat12h     = "2006-01-02 3:04:05\xe2\x80\xafPM -0700"
 	TimeFormat24h     = "2006-01-02 15:04:05 -0700"
 	SleepAnalysisName = "sleep_analysis"
 )
